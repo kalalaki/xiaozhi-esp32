@@ -5,7 +5,7 @@
 #include <cstring>
 
 #define TAG "NoAudioCodec"
-
+// 构造函数
 NoAudioCodec::~NoAudioCodec() {
     if (rx_handle_ != nullptr) {
         ESP_ERROR_CHECK(i2s_channel_disable(rx_handle_));
